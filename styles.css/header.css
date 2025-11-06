@@ -1,0 +1,150 @@
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: var(--roboto);
+    color: var(--black);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 1.5rem;
+
+
+    p {
+        font-size: 1.6rem;
+        padding-bottom: 30px;
+        color: var(--black);
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 48px;
+
+        a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: var(--black);
+        }
+    }
+
+
+    .yellow {
+        text-transform: uppercase;
+        color: var(--yellow);
+        font-size: 1.7rem;
+        font-weight: bold;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-family: var(--playfair);
+        font-size: 4rem;
+        word-wrap: break-word;
+        padding-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .grey {
+        color: var(--grey);
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        padding-bottom: 3rem;
+        max-width: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        max-width: 50%;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+
+        button {
+            width: 50%;
+            height: 3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 10px;
+
+        }
+
+        .projects {
+            background-color: var(--yellow);
+            border-style: none;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+    .linkedin {
+        background-color: var(--white);
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+    }
+
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 0;
+}
+
+img {
+    width: 150%;
+    height: auto;
+}
+
+@media only screen and (min-width: 639px) {
+    header {
+        background-image: url(/img/image1.png);   
+        background-size: 60%;     
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;        
+    }
+    .navigation p {
+        width: 40%;
+    }
+
+    .navigation nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 60%;
+    }
+    .yellow, h1, .grey, .buttons {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .picture img {
+        display: none;
+    }
+}
