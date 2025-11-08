@@ -1,6 +1,141 @@
 main {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    max-width: 100%;
+    font-family: var(--roboto);
+    background-color: var(--light);
 }
 
+h2 {
+    width: 100%;
+    font-family: var(--playfair);
+    font-size: 3.5rem;
+    text-align: center;
+
+}
+
+hr {
+    border: 2px solid var(--yellow);
+    width: 20%;
+    margin-bottom: 3rem;
+}
+
+section {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    background-color: var(--white);
+    border-radius: 16px;
+}
+
+.description {
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+p {
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+}
+
+button {
+    width: 40%;
+    height: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: var(--white);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    background-color: var(--light);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px, solid var(--grey);
+    border-radius: 5px;
+}
+
+input {
+    line-height: 2rem;
+}
+
+textarea {
+    line-height: 5rem;
+}
+
+label {
+    width: 100%;
+    line-height: 2rem;
+}
+
+.send {
+    background-color: var(--yellow);
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 639px) {
+
+    section {
+        flex-direction: row;
+    }
+
+    main section .description,
+    img {
+        max-width: 50%;
+    }
+
+    img {
+        border-bottom-right-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
+    }
+
+    .contact {
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 2rem;
+
+    }
+}
